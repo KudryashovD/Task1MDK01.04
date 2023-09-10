@@ -31,8 +31,8 @@ float TheQuadraticEquation(float a, float b, float c)
     D = pow(b,2) - 4 * a * c;
     if (D > 0 || D == 0)
     {
-        x1 = (-b + sqrt(D)) / (2 * a);
-        x2 = (-b - sqrt(D)) / (2 * a);
+        x1 = (-b + sqrt(abs(D))) / (2 * a);
+        x2 = (-b - sqrt(abs(D))) / (2 * a);
        Result(0, 0, x1, x2, 0);
     }
     else
